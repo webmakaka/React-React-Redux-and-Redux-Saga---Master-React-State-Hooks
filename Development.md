@@ -15,6 +15,14 @@
 
     $ yarn add semantic-ui-react semantic-ui-css
 
+<br/>
+
+### 002 Importing SemanticUI to make our application pretty(er)
+
+<br/>
+
+![Application](/img/pic-m01-p01.png?raw=true)
+
 <br/><br/>
 
 ---

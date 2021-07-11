@@ -1,9 +1,11 @@
 {
   "compilerOptions": {
+    "jsx": "react",
+    "moduleResolution": "node",
     "checkJs": true,
     "module": "esnext",
     "target": "esnext",
-    "baseUrl": ".",
+    "baseUrl": "./src",
     "paths": {
       "~/*": ["src/*"]
     }
