@@ -59,6 +59,14 @@
 
 ### 006 Push To GitHub
 
+<br/>
+
+## 03 Creating components for our react app
+
+<br/>
+
+### 007 Creating a MainHeader component
+
 <br/><br/>
 
 ---
