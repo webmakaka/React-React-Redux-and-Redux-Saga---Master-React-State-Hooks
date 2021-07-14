@@ -8,7 +8,7 @@
 
 ### 001 Create our react app
 
-    $ cd app client/redux
+    $ cd app client/react
     $ npx create-react-app .
 
 <br/>
@@ -34,6 +34,14 @@
 <br/>
 
 ![Application](/img/pic-m02-p01.png?raw=true)
+
+<br/>
+
+### 004 Creating our income and expense history
+
+<br/>
+
+![Application](/img/pic-m02-p02.png?raw=true)
 
 <br/><br/>
 

@@ -7,7 +7,7 @@
     "target": "esnext",
     "baseUrl": "./src",
     "paths": {
-      "~/*": ["src/*"]
+      "~/*": ["./src/*"]
     }
   },
   "exclude": ["node_modules", "**/node_modules/*"],

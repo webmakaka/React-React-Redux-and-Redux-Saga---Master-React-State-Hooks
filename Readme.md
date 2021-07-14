@@ -7,7 +7,9 @@ https://github.com/SwiftNextStep/budget-react
 
 <br/>
 
-### [Development](./Development.md)
+## Development
+
+### [React](./React.md)
 
 <br/><br/>
 
