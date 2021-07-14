@@ -43,6 +43,22 @@
 
 ![Application](/img/pic-m02-p02.png?raw=true)
 
+<br/>
+
+### 004 Creating our income and expense history
+
+<br/>
+
+### 005 Add transactions
+
+<br/>
+
+![Application](/img/pic-m02-p03.png?raw=true)
+
+<br/>
+
+### 006 Push To GitHub
+
 <br/><br/>
 
 ---
