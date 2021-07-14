@@ -67,6 +67,26 @@
 
 ### 007 Creating a MainHeader component
 
+<br/>
+
+### 008 Create our ButtonSaveOrCancel React Component
+
+<br/>
+
+### 009 Creating our NewEntryForm React Component
+
+<br/>
+
+### 010 Refactoring our DisplayBalance React Component
+
+<br/>
+
+### 011 Creating our DisplayBalances React Component
+
+<br/>
+
+### 012 Creating our EntryLine React Component
+
 <br/><br/>
 
 ---
