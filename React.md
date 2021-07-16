@@ -123,6 +123,10 @@
 
 ### 018 Adding keys to the repeated components
 
+<br/>
+
+### 019 Adding a DeleteEntry function
+
 <br/><br/>
 
 ---
