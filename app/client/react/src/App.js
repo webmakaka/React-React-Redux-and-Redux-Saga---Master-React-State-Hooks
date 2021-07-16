@@ -9,21 +9,25 @@ import './App.css';
 
 const initialEntries = [
   {
+    id: 1,
     description: 'Work income',
     value: '$1000,00',
     isExpense: false,
   },
   {
+    id: 2,
     description: 'Water bill',
     value: '$20',
     isExpense: true,
   },
   {
+    id: 3,
     description: 'Rent',
     value: '$300',
     isExpense: true,
   },
   {
+    id: 4,
     description: 'Power bill',
     value: '$50',
     isExpense: true,

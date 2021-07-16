@@ -1,6 +1,6 @@
 import { Grid, GridColumn, Icon, Segment } from 'semantic-ui-react';
 
-function EntryLine({ description, value, isExpense = false }) {
+function EntryLine({ entry: { description, value, isExpense = false } }) {
   return (
     <Segment color={isExpense ? 'red' : 'green'}>
       <Grid columns={3} textAlign="right">

@@ -119,6 +119,10 @@
 
 ### 017 Creating a component that renders multiple components
 
+<br/>
+
+### 018 Adding keys to the repeated components
+
 <br/><br/>
 
 ---
