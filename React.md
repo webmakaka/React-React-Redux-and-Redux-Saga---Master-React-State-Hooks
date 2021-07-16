@@ -115,6 +115,10 @@
 
 ![Application](/img/pic-m04-p01.png?raw=true)
 
+<br/>
+
+### 017 Creating a component that renders multiple components
+
 <br/><br/>
 
 ---
