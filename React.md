@@ -131,6 +131,10 @@
 
 ### 020 Adding a new Entry
 
+<br/>
+
+### 021 Adding a toggle to identify the type of entry
+
 <br/><br/>
 
 ---
