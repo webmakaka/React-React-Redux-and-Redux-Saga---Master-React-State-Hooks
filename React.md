@@ -127,6 +127,10 @@
 
 ### 019 Adding a DeleteEntry function
 
+<br/>
+
+### 020 Adding a new Entry
+
 <br/><br/>
 
 ---

@@ -42,6 +42,15 @@ function App() {
     setEntries(result);
   };
 
+  const addEntry = (description, value) => {
+    const result = entries.concat({
+      id: entries.length + 1,
+      description,
+      value,
+    });
+    setEntries(result);
+  };
+
   return (
     <Container>
       <MainHeader title="Budget" />
@@ -56,9 +65,9 @@ function App() {
       <DisplayBalances />
 
       <MainHeader title="History" type="h3" />
-      <EntryLines entries={entries} deleteEntry={deleteEntry}/>
+      <EntryLines entries={entries} deleteEntry={deleteEntry} />
       <MainHeader title="Add a new transaction" type="h3" />
-      <NewEntryForm />
+      <NewEntryForm addEntry={addEntry} />
     </Container>
   );
 }
