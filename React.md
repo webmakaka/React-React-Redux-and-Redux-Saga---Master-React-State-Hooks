@@ -135,6 +135,38 @@
 
 ### 021 Adding a toggle to identify the type of entry
 
+<br/>
+
+### 022 Creating a model to edit the entries
+
+<br/>
+
+### 023 Formatting our modal
+
+<br/>
+
+### 024 Making our components more reusable
+
+<br/>
+
+### 025 Refactoring to manage the state
+
+<br/>
+
+### 026 More Refactoring state
+
+<br/>
+
+### 027 Making the modal work with useEffect
+
+<br/>
+
+### 028 Final adjustments to state and we done
+
+<br/>
+
+![Application](/img/pic-m04-p02.png?raw=true)
+
 <br/><br/>
 
 ---
