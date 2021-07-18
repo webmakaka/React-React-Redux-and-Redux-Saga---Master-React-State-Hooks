@@ -167,6 +167,18 @@
 
 ![Application](/img/pic-m04-p02.png?raw=true)
 
+<br/>
+
+### 029 Calculating the totals using useEffect
+
+<br/>
+
+### 030 Displaying totals, can we do some Redux now?
+
+<br/>
+
+### 031 Fixing warning and committing all the state changes
+
 <br/><br/>
 
 ---

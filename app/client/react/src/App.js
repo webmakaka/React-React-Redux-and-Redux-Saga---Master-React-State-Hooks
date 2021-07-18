@@ -12,25 +12,25 @@ const initialEntries = [
   {
     id: 1,
     description: 'Work income',
-    value: '$1000,00',
+    value: 1000.0,
     isExpense: false,
   },
   {
     id: 2,
     description: 'Water bill',
-    value: '$20',
+    value: 20.0,
     isExpense: true,
   },
   {
     id: 3,
     description: 'Rent',
-    value: '$300',
+    value: 300.0,
     isExpense: true,
   },
   {
     id: 4,
     description: 'Power bill',
-    value: '$50',
+    value: 50.0,
     isExpense: true,
   },
 ];
@@ -38,10 +38,13 @@ const initialEntries = [
 function App() {
   const [entries, setEntries] = useState(initialEntries);
   const [description, setDescription] = useState('');
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState(0);
   const [isExpense, setIsExpense] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [entryId, setEntryId] = useState();
+  const [incomeTotal, setIncomeTotal] = useState(0);
+  const [expenseTotal, setExpenseTotal] = useState(0);
+  const [total, setTotal] = useState(0);
 
   useEffect(() => {
     if (!isOpen && entryId) {
@@ -54,6 +57,21 @@ function App() {
       resetEntry();
     }
   }, [isOpen]);
+
+  useEffect(() => {
+    let totalIncomes = 0;
+    let totalExpenses = 0;
+    entries.map((entry) => {
+      if (entry.isExpense) {
+        return (totalExpenses += Number(entry.value));
+      } else {
+        return (totalIncomes += Number(entry.value));
+      }
+    });
+    setTotal(totalIncomes - totalExpenses);
+    setIncomeTotal(totalIncomes);
+    setExpenseTotal(totalExpenses);
+  }, [entries]);
 
   const deleteEntry = (id) => {
     const result = entries.filter((entry) => entry.id !== id);
@@ -85,7 +103,7 @@ function App() {
 
   const resetEntry = () => {
     setDescription('');
-    setValue('');
+    setValue(0);
     setIsExpense(true);
   };
 
@@ -95,12 +113,12 @@ function App() {
 
       <DisplayBalance
         title="Your Balance"
-        value="2,550.53"
+        value={total}
         color="green"
         size="small"
       />
 
-      <DisplayBalances />
+      <DisplayBalances incomeTotal={incomeTotal} expenseTotal={expenseTotal} />
 
       <MainHeader title="History" type="h3" />
       <EntryLines
