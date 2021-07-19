@@ -32,6 +32,10 @@
 
 ### 037 Creating Action Functions for Redux
 
+<br/>
+
+### 038 Creating a Reduce
+
 <br/><br/>
 
 ---

@@ -74,7 +74,7 @@ function App() {
     setExpenseTotal(totalExpenses);
   }, [entries]);
 
-  const store = createStore((state = initialEntries, action) => {
+  function entriesReducer(state = initialEntries, action) {
     let newEntries;
 
     switch (action.type) {
@@ -89,7 +89,9 @@ function App() {
       default:
         return state;
     }
-  });
+  }
+
+  const store = createStore(entriesReducer);
 
   store.subscribe(() => {
     console.log('store ', store.getState());
