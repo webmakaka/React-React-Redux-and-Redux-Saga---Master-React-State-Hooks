@@ -75,9 +75,15 @@ function App() {
   }, [entries]);
 
   const store = createStore((state = initialEntries, action) => {
+    let newEntries;
+
     switch (action.type) {
       case 'ADD_ENTRY':
-        const newEntries = state.concat({ ...action.payload });
+        newEntries = state.concat({ ...action.payload });
+        return newEntries;
+
+      case 'REMOVE_ENTRY':
+        newEntries = state.filter((entry) => entry.id !== action.payload.id);
         return newEntries;
 
       default:
@@ -88,14 +94,20 @@ function App() {
   store.subscribe(() => {
     console.log('store ', store.getState());
   });
-  const payload = {
+
+  const payload_add = {
     id: 5,
     description: 'Hello from Redux',
     value: 100.0,
     isExpense: false,
   };
 
-  store.dispatch({ type: 'ADD_ENTRY', payload });
+  const payload_remove = {
+    id: 1,
+  };
+
+  store.dispatch({ type: 'ADD_ENTRY', payload: payload_add });
+  store.dispatch({ type: 'REMOVE_ENTRY', payload: payload_remove });
 
   const deleteEntry = (id) => {
     const result = entries.filter((entry) => entry.id !== id);

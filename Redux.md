@@ -24,6 +24,10 @@
 
 ### 035 Fixing the code and Subscribing to all store changes in Redux
 
+<br/>
+
+### 036 Creating a new Redux Action
+
 <br/><br/>
 
 ---
