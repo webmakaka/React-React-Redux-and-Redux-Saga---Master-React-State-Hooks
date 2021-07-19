@@ -28,6 +28,10 @@
 
 ### 036 Creating a new Redux Action
 
+<br/>
+
+### 037 Creating Action Functions for Redux
+
 <br/><br/>
 
 ---
