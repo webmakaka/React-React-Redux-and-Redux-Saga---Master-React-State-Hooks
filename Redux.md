@@ -2,16 +2,15 @@
 
 <br/>
 
-**Original Src:**  
-https://github.com/SwiftNextStep/budget-react
+## 05 Redux - Store, Dispatch, Actions and Reducers
 
 <br/>
 
-## Development
+### 032 Create Redux Store
 
-### [React](./React.md)
-
-### [Redux](./Redux.md)
+    $ cd redux
+    $ yarn add redux react-redux
+    $ yarn add -D redux-devtools
 
 <br/><br/>
 
