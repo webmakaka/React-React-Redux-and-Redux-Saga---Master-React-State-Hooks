@@ -12,6 +12,18 @@
     $ yarn add redux react-redux
     $ yarn add -D redux-devtools
 
+<br/>
+
+### 033 Dispatching actions with Redux
+
+<br/>
+
+### 034 Dispatch with payload with Redux
+
+<br/>
+
+### 035 Fixing the code and Subscribing to all store changes in Redux
+
 <br/><br/>
 
 ---
