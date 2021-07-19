@@ -5,36 +5,8 @@ import MainHeader from 'components/MainHeader';
 import ModalEdit from 'components/ModalEdit';
 import NewEntryForm from 'components/NewEntryForm';
 import { useEffect, useState } from 'react';
-import { combineReducers, createStore } from 'redux';
 import { Container } from 'semantic-ui-react';
 import './App.css';
-
-const initialEntries = [
-  {
-    id: 1,
-    description: 'Work income',
-    value: 1000.0,
-    isExpense: false,
-  },
-  {
-    id: 2,
-    description: 'Water bill',
-    value: 20.0,
-    isExpense: true,
-  },
-  {
-    id: 3,
-    description: 'Rent',
-    value: 300.0,
-    isExpense: true,
-  },
-  {
-    id: 4,
-    description: 'Power bill',
-    value: 50.0,
-    isExpense: true,
-  },
-];
 
 function App() {
   const [entries, setEntries] = useState(initialEntries);
@@ -73,50 +45,6 @@ function App() {
     setIncomeTotal(totalIncomes);
     setExpenseTotal(totalExpenses);
   }, [entries]);
-
-  function entriesReducer(state = initialEntries, action) {
-    let newEntries;
-
-    switch (action.type) {
-      case 'ADD_ENTRY':
-        newEntries = state.concat({ ...action.payload });
-        return newEntries;
-
-      case 'REMOVE_ENTRY':
-        newEntries = state.filter((entry) => entry.id !== action.payload.id);
-        return newEntries;
-
-      default:
-        return state;
-    }
-  }
-
-  const combinedReducers = combineReducers({
-    erntries: entriesReducer,
-  });
-  const store = createStore(combinedReducers);
-
-  store.subscribe(() => {
-    console.log('store ', store.getState());
-  });
-
-  const payload_add = {
-    id: 5,
-    description: 'Hello from Redux',
-    value: 100.0,
-    isExpense: false,
-  };
-
-  function addEntryRedux(payload) {
-    return { type: 'ADD_ENTRY', payload };
-  }
-
-  function removeEntryRedux(id) {
-    return { type: 'REMOVE_ENTRY', payload: { id } };
-  }
-
-  store.dispatch(addEntryRedux(payload_add));
-  store.dispatch(removeEntryRedux(1));
 
   const deleteEntry = (id) => {
     const result = entries.filter((entry) => entry.id !== id);
@@ -196,3 +124,30 @@ function App() {
 }
 
 export default App;
+
+const initialEntries = [
+  {
+    id: 1,
+    description: 'Work income',
+    value: 1000.0,
+    isExpense: false,
+  },
+  {
+    id: 2,
+    description: 'Water bill',
+    value: 20.0,
+    isExpense: true,
+  },
+  {
+    id: 3,
+    description: 'Rent',
+    value: 300.0,
+    isExpense: true,
+  },
+  {
+    id: 4,
+    description: 'Power bill',
+    value: 50.0,
+    isExpense: true,
+  },
+];

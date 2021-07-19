@@ -40,6 +40,10 @@
 
 ### 039 Combine Redux reducers in one store
 
+<br/>
+
+### 040 Refactoring our Redux to Actions, Reducers and Store
+
 <br/><br/>
 
 ---
