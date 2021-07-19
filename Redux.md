@@ -36,6 +36,10 @@
 
 ### 038 Creating a Reduce
 
+<br/>
+
+### 039 Combine Redux reducers in one store
+
 <br/><br/>
 
 ---

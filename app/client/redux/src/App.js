@@ -5,7 +5,7 @@ import MainHeader from 'components/MainHeader';
 import ModalEdit from 'components/ModalEdit';
 import NewEntryForm from 'components/NewEntryForm';
 import { useEffect, useState } from 'react';
-import { createStore } from 'redux';
+import { combineReducers, createStore } from 'redux';
 import { Container } from 'semantic-ui-react';
 import './App.css';
 
@@ -91,7 +91,10 @@ function App() {
     }
   }
 
-  const store = createStore(entriesReducer);
+  const combinedReducers = combineReducers({
+    erntries: entriesReducer,
+  });
+  const store = createStore(combinedReducers);
 
   store.subscribe(() => {
     console.log('store ', store.getState());
