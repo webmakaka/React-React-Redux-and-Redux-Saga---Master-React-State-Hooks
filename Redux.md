@@ -66,6 +66,14 @@
 
     $ yarn add uuid
 
+<br/>
+
+### 045 Installing and Configuring Redux Dev Tools
+
+Add Chrome extension - Redux DevTools
+
+    $ yarn add redux-devtools-extension
+
 <br/><br/>
 
 ---
