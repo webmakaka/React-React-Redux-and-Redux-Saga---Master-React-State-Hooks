@@ -4,6 +4,7 @@ import EntryForm from 'components/EntryForm';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { Form } from 'semantic-ui-react';
+import { v4 as uuidv4 } from 'uuid';
 
 function NewEntryForm() {
   const [description, setDescription] = useState('');
@@ -14,7 +15,7 @@ function NewEntryForm() {
   function addEntry() {
     dispatch(
       addEntryRedux({
-        id: 5,
+        id: uuidv4(),
         description,
         value,
         isExpense,

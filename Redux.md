@@ -60,6 +60,12 @@
 
 ### 043 Adding a new entry with React Redux Hooks
 
+<br/>
+
+### 044 Using UUIDs for the entry ID
+
+    $ yarn add uuid
+
 <br/><br/>
 
 ---
