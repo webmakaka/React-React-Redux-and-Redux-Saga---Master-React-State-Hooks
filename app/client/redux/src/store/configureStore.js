@@ -4,7 +4,7 @@ import { combineReducers, createStore } from 'redux';
 const configureStore = () => {
   return createStore(
     combineReducers({
-      erntries: entiresReducers,
+      entries: entiresReducers,
     })
   );
 };

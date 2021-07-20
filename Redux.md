@@ -44,6 +44,14 @@
 
 ### 040 Refactoring our Redux to Actions, Reducers and Store
 
+<br/>
+
+## 06 React-Redux
+
+<br/>
+
+### 041 React Redux combining our Redux with our React components
+
 <br/><br/>
 
 ---

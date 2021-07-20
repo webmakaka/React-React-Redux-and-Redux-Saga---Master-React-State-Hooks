@@ -1,3 +1,30 @@
+const initialEntries = [
+  {
+    id: 1,
+    description: 'Work income reducer',
+    value: 1000.0,
+    isExpense: false,
+  },
+  {
+    id: 2,
+    description: 'Water bill reducer',
+    value: 20.0,
+    isExpense: true,
+  },
+  {
+    id: 3,
+    description: 'Rent reducer',
+    value: 300.0,
+    isExpense: true,
+  },
+  {
+    id: 4,
+    description: 'Power bill reducer',
+    value: 50.0,
+    isExpense: true,
+  },
+];
+
 const reducer = (state = initialEntries, action) => {
   let newEntries;
 
@@ -16,30 +43,3 @@ const reducer = (state = initialEntries, action) => {
 };
 
 export default reducer;
-
-const initialEntries = [
-  {
-    id: 1,
-    description: 'Work income',
-    value: 1000.0,
-    isExpense: false,
-  },
-  {
-    id: 2,
-    description: 'Water bill',
-    value: 20.0,
-    isExpense: true,
-  },
-  {
-    id: 3,
-    description: 'Rent',
-    value: 300.0,
-    isExpense: true,
-  },
-  {
-    id: 4,
-    description: 'Power bill',
-    value: 50.0,
-    isExpense: true,
-  },
-];
