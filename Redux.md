@@ -56,6 +56,10 @@
 
 ### 042 React Redux Hook useDispatch
 
+<br/>
+
+### 043 Adding a new entry with React Redux Hooks
+
 <br/><br/>
 
 ---

@@ -47,11 +47,6 @@ function App() {
     setExpenseTotal(totalExpenses);
   }, [entries]);
 
-  const deleteEntry = (id) => {
-    const result = entries.filter((entry) => entry.id !== id);
-    // setEntries(result);
-  };
-
   const editEntry = (id) => {
     if (id) {
       const index = entries.findIndex((entry) => entry.id === id);
