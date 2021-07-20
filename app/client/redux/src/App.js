@@ -10,7 +10,6 @@ import { Container } from 'semantic-ui-react';
 import './App.css';
 
 function App() {
-  const [entries, setEntries] = useState(initialEntries);
   const [description, setDescription] = useState('');
   const [value, setValue] = useState(0);
   const [isExpense, setIsExpense] = useState(false);
@@ -19,7 +18,7 @@ function App() {
   const [incomeTotal, setIncomeTotal] = useState(0);
   const [expenseTotal, setExpenseTotal] = useState(0);
   const [total, setTotal] = useState(0);
-  const entriesRedux = useSelector((state) => state.entries);
+  const entries = useSelector((state) => state.entries);
 
   useEffect(() => {
     if (!isOpen && entryId) {
@@ -28,7 +27,7 @@ function App() {
       newEntries[index].description = description;
       newEntries[index].value = value;
       newEntries[index].isExpense = isExpense;
-      setEntries(newEntries);
+      // setEntries(newEntries);
       resetEntry();
     }
   }, [isOpen]);
@@ -50,7 +49,7 @@ function App() {
 
   const deleteEntry = (id) => {
     const result = entries.filter((entry) => entry.id !== id);
-    setEntries(result);
+    // setEntries(result);
   };
 
   const editEntry = (id) => {
@@ -72,7 +71,7 @@ function App() {
       value,
       isExpense,
     });
-    setEntries(result);
+    // setEntries(result);
     resetEntry();
   };
 
@@ -81,8 +80,6 @@ function App() {
     setValue(0);
     setIsExpense(true);
   };
-
-  console.log('entriesRedux123 ', entriesRedux);
 
   return (
     <Container>
@@ -98,11 +95,7 @@ function App() {
       <DisplayBalances incomeTotal={incomeTotal} expenseTotal={expenseTotal} />
 
       <MainHeader title="History" type="h3" />
-      <EntryLines
-        entries={entriesRedux}
-        deleteEntry={deleteEntry}
-        editEntry={editEntry}
-      />
+      <EntryLines entries={entries} editEntry={editEntry} />
       <MainHeader title="Add a new transaction" type="h3" />
       <NewEntryForm
         addEntry={addEntry}
@@ -128,30 +121,3 @@ function App() {
 }
 
 export default App;
-
-const initialEntries = [
-  {
-    id: 1,
-    description: 'Work income',
-    value: 1000.0,
-    isExpense: false,
-  },
-  {
-    id: 2,
-    description: 'Water bill',
-    value: 20.0,
-    isExpense: true,
-  },
-  {
-    id: 3,
-    description: 'Rent',
-    value: 300.0,
-    isExpense: true,
-  },
-  {
-    id: 4,
-    description: 'Power bill',
-    value: 50.0,
-    isExpense: true,
-  },
-];

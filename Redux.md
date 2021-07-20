@@ -52,6 +52,10 @@
 
 ### 041 React Redux combining our Redux with our React components
 
+<br/>
+
+### 042 React Redux Hook useDispatch
+
 <br/><br/>
 
 ---
