@@ -74,6 +74,15 @@ Add Chrome extension - Redux DevTools
 
     $ yarn add redux-devtools-extension
 
+
+<br/>
+
+### 046 Installing and Configuring Redux Dev Tools
+
+<br/>
+
+### 047 Creating our first custom hook useEntryDetails
+
 <br/><br/>
 
 ---
