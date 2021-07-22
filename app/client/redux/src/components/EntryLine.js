@@ -1,4 +1,5 @@
 import { removeEntryRedux } from 'actions/entires.actions';
+import { openEditModal } from 'actions/modals.actions';
 import { useDispatch } from 'react-redux';
 import { Container, Grid, GridColumn, Icon, Segment } from 'semantic-ui-react';
 
@@ -16,7 +17,7 @@ function EntryLine({ id, description, value, isExpense = false, editEntry }) {
               {value}
             </GridColumn>
             <GridColumn width={3}>
-              <Icon name="edit" bordered onClick={() => editEntry(id)} />
+              <Icon name="edit" bordered onClick={() => dispatch(openEditModal(id))} />
               <Icon
                 name="trash"
                 bordered

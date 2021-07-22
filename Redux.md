@@ -74,7 +74,6 @@ Add Chrome extension - Redux DevTools
 
     $ yarn add redux-devtools-extension
 
-
 <br/>
 
 ### 046 Installing and Configuring Redux Dev Tools
@@ -82,6 +81,26 @@ Add Chrome extension - Redux DevTools
 <br/>
 
 ### 047 Creating our first custom hook useEntryDetails
+
+<br/>
+
+### 048 New Redux action and new Redux Reducer update entry
+
+<br/>
+
+### 049 Creating a new Redux Store (and action and reducer)
+
+<br/>
+
+### 050 Dispatching new actions to the new Redux Store
+
+<br/>
+
+### 051 Open the modal after the dispatch
+
+<br/>
+
+### 052 Closing the modal on dispatch
 
 <br/><br/>
 
