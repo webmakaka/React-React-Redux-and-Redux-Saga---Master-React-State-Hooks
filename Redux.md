@@ -102,6 +102,26 @@ Add Chrome extension - Redux DevTools
 
 ### 052 Closing the modal on dispatch
 
+<br/>
+
+### 053 Loading the modal data
+
+<br/>
+
+### 054 Making our custom hook even better
+
+<br/>
+
+### 055 Adding an update dispatch to our custom hook
+
+<br/>
+
+### 056 Firing 2 dispatches at once
+
+<br/>
+
+### 057 Cleaning up the custom hook for easy use
+
 <br/><br/>
 
 ---
