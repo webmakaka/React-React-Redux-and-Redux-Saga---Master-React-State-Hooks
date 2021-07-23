@@ -42,6 +42,10 @@
 
 ### 066 Creating a function to automatically start all Sagas
 
+<br/>
+
+### 067 Understanding Saga Effect PUT
+
 <br/><br/>
 
 ---
