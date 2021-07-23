@@ -14,6 +14,34 @@
 
 ### 061 Creating and running our first saga
 
+<br/>
+
+## 10 Understanding Generator Functions and Yield Returns
+
+<br/>
+
+### 062 Introduction to Generator Functions and Yield Returns
+
+<br/>
+
+### 063 Understanding _infinity_ function generators
+
+<br/>
+
+### 064 Driving the point home, Generator functions and Yield returns
+
+<br/>
+
+## 11 Understanding the main Saga Effects
+
+<br/>
+
+### 065 Understanding Saga Effect Take
+
+<br/>
+
+### 066 Creating a function to automatically start all Sagas
+
 <br/><br/>
 
 ---
