@@ -2,35 +2,13 @@
 
 <br/>
 
-**Original Src:**  
-https://github.com/SwiftNextStep/budget-react
+## 09 Adding Saga to our project
 
 <br/>
 
-## Development
+### 060 Installing redux-saga middleware
 
-### [React](./React.md)
-
-### [Redux](./Redux.md)
-
-<br/>
-
-### Run API
-
-<br/>
-
-    $ yarn global add json-server
-
-<br/>
-
-    $ cd app/api
-    $ json-server --watch db.json --port 3001
-
-http://localhost:3000/entries/
-
-<br/>
-
-### [Saga](./Saga.md)
+    $ yarn add redux-saga
 
 <br/><br/>
 

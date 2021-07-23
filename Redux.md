@@ -68,6 +68,10 @@
 
 <br/>
 
+## 07 React Redux Devtools
+
+<br/>
+
 ### 045 Installing and Configuring Redux Dev Tools
 
 Add Chrome extension - Redux DevTools
