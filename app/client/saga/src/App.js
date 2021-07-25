@@ -1,3 +1,4 @@
+import { getAllEntries } from 'actions/entires.actions';
 import DisplayBalance from 'components/DisplayBalance';
 import DisplayBalances from 'components/DisplayBalances';
 import EntryLines from 'components/EntryLines';
@@ -5,7 +6,7 @@ import MainHeader from 'components/MainHeader';
 import ModalEdit from 'components/ModalEdit';
 import NewEntryForm from 'components/NewEntryForm';
 import { useEffect, useState } from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { Container } from 'semantic-ui-react';
 import './App.css';
 
@@ -36,6 +37,11 @@ function App() {
     setIncomeTotal(totalIncomes);
     setExpenseTotal(totalExpenses);
   }, [entries]);
+
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getAllEntries());
+  });
 
   return (
     <Container>

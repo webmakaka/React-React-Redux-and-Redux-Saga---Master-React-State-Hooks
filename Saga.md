@@ -58,6 +58,24 @@
 
 ### 069 Cleaning up the way for sagas
 
+<br/>
+
+### 070 Removing the initial data from the reducer and fetching it from the backend
+
+    $ yarn add axios
+
+<br/>
+
+### 071 Creating part of our first real Saga using Take
+
+<br/>
+
+### 072 Querying data from our saga using CALL
+
+<br/>
+
+### 073 Adding data to the UI using PUT
+
 <br/><br/>
 
 ---
