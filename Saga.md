@@ -50,6 +50,14 @@
 
 ### 068 Understanding Saga Effect CALL
 
+<br/>
+
+## 12 Using Redux Saga to our project
+
+<br/>
+
+### 069 Cleaning up the way for sagas
+
 <br/><br/>
 
 ---
