@@ -142,6 +142,26 @@ import { call, delay, put, take, fork } from 'redux-saga/effects';
 
 ### 084 Reviewing the Blocking Saga
 
+<br/>
+
+### 084 Reviewing the Blocking Saga
+
+<br/>
+
+### 084 Reviewing the Blocking Saga
+
+<br/>
+
+### 085 Importing our Add Entries Saga to our Saga Initializer
+
+<br/>
+
+### 086 Adding TakeLatest to our application
+
+<br/>
+
+### 087 Updating the UI using PUT with TakeLatest
+
 <br/><br/>
 
 ---
