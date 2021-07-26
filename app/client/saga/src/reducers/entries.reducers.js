@@ -6,9 +6,6 @@ const reducer = (state = initialEntries, action) => {
   let newEntries;
 
   switch (action.type) {
-    case entriesTypes.POPULATE_ENTRIES:
-      return action.payload;
-
     case entriesTypes.ADD_ENTRY:
       newEntries = state.concat({ ...action.payload });
       return newEntries;
@@ -16,6 +13,9 @@ const reducer = (state = initialEntries, action) => {
     case entriesTypes.REMOVE_ENTRY:
       newEntries = state.filter((entry) => entry.id !== action.payload.id);
       return newEntries;
+
+    case entriesTypes.POPULATE_ENTRIES:
+      return action.payload;
 
     case entriesTypes.POPULATE_ENTRY_DETAILS:
     case entriesTypes.UPDATE_ENTRY:

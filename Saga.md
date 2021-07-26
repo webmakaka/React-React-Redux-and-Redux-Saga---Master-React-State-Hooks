@@ -118,6 +118,22 @@ import { call, delay, put, take, fork } from 'redux-saga/effects';
 
 ### 078 Cleaning up the code before the more advanced challenges
 
+<br/>
+
+### 079 Redux Saga Advanced Effect - TAKEEVERY
+
+<br/>
+
+### 080 Saga Advanced Effects CANCEL and CANCELLED
+
+<br/>
+
+### 081 Saga Advanced Effects TAKELATEST
+
+<br/>
+
+### 082 Cleaning up the code before add the new Advanced Saga Effects
+
 <br/><br/>
 
 ---
