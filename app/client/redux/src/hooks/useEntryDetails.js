@@ -1,4 +1,4 @@
-import { addEntryRedux, updateEntryRedux } from 'actions/entires.actions';
+import { addEntryRedux, updateEntryRedux } from 'actions/entries.actions';
 import { closeEditModal } from 'actions/modals.actions';
 import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';

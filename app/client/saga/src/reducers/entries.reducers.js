@@ -1,4 +1,4 @@
-import entriesTypes from 'actions/entires.actions';
+import entriesTypes from 'actions/entries.actions';
 
 const initialEntries = [];
 

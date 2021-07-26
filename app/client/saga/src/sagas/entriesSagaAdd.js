@@ -1,4 +1,4 @@
-import { default as entriesTypes } from 'actions/entires.actions';
+import { default as entriesTypes } from 'actions/entries.actions';
 import axios from 'axios';
 import { call, put, takeLatest } from 'redux-saga/effects';
 

@@ -2,7 +2,7 @@ import {
   default as entriesTypes,
   populateEntries,
   populateEntryDetails,
-} from 'actions/entires.actions';
+} from 'actions/entries.actions';
 import axios from 'axios';
 import { call, fork, put, take } from 'redux-saga/effects';
 
@@ -26,6 +26,6 @@ export function* getAllEntriesDetails() {
   for (let index = 0; index < payload.length; index++) {
     const entry = payload[index];
     console.log(entry);
-    fork(getEntryDetails, entry.id);
+    yield fork(getEntryDetails, entry.id);
   }
 }

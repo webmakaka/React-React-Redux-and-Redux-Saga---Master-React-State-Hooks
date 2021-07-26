@@ -1,4 +1,4 @@
-import { getAllEntries } from 'actions/entires.actions';
+import { getAllEntries } from 'actions/entries.actions';
 import DisplayBalance from 'components/DisplayBalance';
 import DisplayBalances from 'components/DisplayBalances';
 import EntryLines from 'components/EntryLines';

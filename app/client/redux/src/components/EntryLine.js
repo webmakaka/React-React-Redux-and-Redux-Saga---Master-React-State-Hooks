@@ -1,4 +1,4 @@
-import { removeEntryRedux } from 'actions/entires.actions';
+import { removeEntryRedux } from 'actions/entries.actions';
 import { openEditModal } from 'actions/modals.actions';
 import { useDispatch } from 'react-redux';
 import { Container, Grid, GridColumn, Icon, Segment } from 'semantic-ui-react';
