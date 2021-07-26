@@ -110,6 +110,14 @@ import { call, delay, put, take, fork } from 'redux-saga/effects';
 
 ### 077 Getting all the entry details at the same time and update the UI as it arrives
 
+<br/>
+
+## 15 Advanced Redux Saga Effects
+
+<br/>
+
+### 078 Cleaning up the code before the more advanced challenges
+
 <br/><br/>
 
 ---
