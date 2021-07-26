@@ -134,6 +134,10 @@ import { call, delay, put, take, fork } from 'redux-saga/effects';
 
 ### 082 Cleaning up the code before add the new Advanced Saga Effects
 
+<br/>
+
+### 083 Deleting an Item (the long way)
+
 <br/><br/>
 
 ---
