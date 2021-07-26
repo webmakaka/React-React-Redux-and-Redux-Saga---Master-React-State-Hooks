@@ -2,6 +2,12 @@
 
 <br/>
 
+```
+import { call, delay, put, take, fork } from 'redux-saga/effects';
+```
+
+<br/>
+
 ## 09 Adding Saga to our project
 
 <br/>
@@ -75,6 +81,34 @@
 <br/>
 
 ### 073 Adding data to the UI using PUT
+
+<br/>
+
+## 13 Learning even more Saga Effects
+
+<br/>
+
+### 074 Understand another Saga Effect FORK
+
+<br/>
+
+### 074 Understand another Saga Effect FORK
+
+<br/>
+
+### 075 Splitting our Backend to have two endpoints to use with Fork
+
+<br/>
+
+## 14 Implement the new Saga effects on our application
+
+<br/>
+
+### 076 Implementing Saga Effect FORK in our app
+
+<br/>
+
+### 077 Getting all the entry details at the same time and update the UI as it arrives
 
 <br/><br/>
 
