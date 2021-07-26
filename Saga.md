@@ -138,6 +138,10 @@ import { call, delay, put, take, fork } from 'redux-saga/effects';
 
 ### 083 Deleting an Item (the long way)
 
+<br/>
+
+### 084 Reviewing the Blocking Saga
+
 <br/><br/>
 
 ---

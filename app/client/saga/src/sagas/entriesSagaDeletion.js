@@ -6,11 +6,15 @@ export function* deleteEntrySaga() {
   while (true) {
     const { payload } = yield take(entriesTypes.REMOVE_ENTRY);
     yield call(deleteEntrie, payload.id);
-    yield put({ type: 'REMOVE_ENTRY_RESULT', payload: { id: payload.id } });
+    yield put({
+      type: entriesTypes.REMOVE_ENTRY_RESULT,
+      payload: { id: payload.id },
+    });
   }
 }
 
-function deleteEntrie(id) {
+async function deleteEntrie(id) {
   axios.delete(`http://localhost:3001/entries/${id}`);
   axios.delete(`http://localhost:3001/values/${id}`);
+  await new Promise((s) => setTimeout(s, 3000));
 }
